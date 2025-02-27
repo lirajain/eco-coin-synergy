@@ -20,10 +20,11 @@ interface TrackerItemProps {
   change: string;
   isPositive: boolean;
   className?: string;
+  style?: React.CSSProperties; // Added style prop to fix TypeScript error
 }
 
-const TrackerItem = ({ icon: Icon, label, value, change, isPositive, className }: TrackerItemProps) => (
-  <div className={cn("flex items-center p-3 rounded-lg bg-white/5 border border-white/5", className)}>
+const TrackerItem = ({ icon: Icon, label, value, change, isPositive, className, style }: TrackerItemProps) => (
+  <div className={cn("flex items-center p-3 rounded-lg bg-white/5 border border-white/5", className)} style={style}>
     <div className="p-3 rounded-full bg-yuzn-dark-lightest mr-3">
       <Icon className="h-5 w-5 text-yuzn-green" />
     </div>

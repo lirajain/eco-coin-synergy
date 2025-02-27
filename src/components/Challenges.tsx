@@ -201,8 +201,8 @@ const Challenges = () => {
                 </div>
                 <Progress 
                   value={challenge.progress} 
-                  className="h-2 bg-white/10" 
-                  indicatorClassName={cn(
+                  className={cn(
+                    "h-2 bg-white/10",
                     challenge.isCompleted 
                       ? "bg-gradient-to-r from-yuzn-green to-yuzn-green-light" 
                       : "bg-gradient-to-r from-yuzn-blue to-yuzn-green"

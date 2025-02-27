@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { TrendingUp, TrendingDown, BarChart3, Exchange, ArrowRight } from "lucide-react";
+import { TrendingUp, TrendingDown, BarChart3, Repeat, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -33,7 +33,7 @@ const TradePanel = () => {
           )}
           onClick={() => setActiveTab('trade')}
         >
-          <Exchange className="h-4 w-4" />
+          <Repeat className="h-4 w-4" />
           <span>Trade</span>
         </button>
         <button
